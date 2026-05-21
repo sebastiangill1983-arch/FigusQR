@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>FigusQR</title>
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#E61D25">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -415,7 +415,7 @@
 
 <!-- NAV -->
 <audio id="musica" loop preload="none">
-  <source src="/musica.mp3" type="audio/mp3">
+  <source src="musica.mp3" type="audio/mp3">
 </audio>
 <nav class="nav-bar">
   <div class="nav-item active" id="nav-p1" onclick="ir('p1')"><span class="nav-icon">🏆</span><span class="nav-lbl">Inicio</span></div>
@@ -850,7 +850,7 @@ function generarPapelitos(){
 // Registrar Service Worker para PWA
 if('serviceWorker' in navigator){
   window.addEventListener('load', ()=>{
-    navigator.serviceWorker.register('/sw.js').catch(()=>{});
+    navigator.serviceWorker.register('sw.js').catch(()=>{});
   });
 }
 
